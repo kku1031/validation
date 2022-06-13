@@ -10,10 +10,11 @@
 <body>
 <form:form action="register" modelAttribute="boardVo">
 	제목 : <form:input type="text" path="title"/>
-	<form:errors path="title" class="error"/><br>
+	<form:errors path="title" class="error" element="div"/><br>
 	내용 : <br> 
 	<form:textarea rows="30" cols="50" path="content"/><br>
-	작성자 :<form:input type="text" path="writer"/> <br>
+	작성자 :<form:input type="text" path="writer"/> 
+	<form:errors path="writer"/>
 	<button>등록</button>
 </form:form>
 </body>
