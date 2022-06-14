@@ -8,7 +8,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 @Configuration
 public class RootConfig {
-	
+		
 	@Bean
 	public MessageSource messageSource() {
 		ReloadableResourceBundleMessageSource source
@@ -24,5 +24,7 @@ public class RootConfig {
 	public SessionLocaleResolver localeResolver() {
 		return new SessionLocaleResolver();
 	}		
+	
+	
 	
 }
